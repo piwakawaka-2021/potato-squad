@@ -1,0 +1,24 @@
+{
+  "name": "potato-squad",
+  "version": "1.0.0",
+  "description": "Find out everything you need to know in this exciting, action packed quiz!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piwakawaka-2021/potato-squad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piwakawaka-2021/potato-squad/issues"
+  },
+  "homepage": "https://github.com/piwakawaka-2021/potato-squad#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.6.3"
+  }
+}
