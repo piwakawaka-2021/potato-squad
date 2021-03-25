@@ -1,42 +1,39 @@
 {
-    "Vegetables": [
-      {
-        "id": 1,
-        "name": "Potato",
-        "Description": "A light yellow starchy vegetable with a mild taste, often will find them stuck to the couch or wandering down hallways",
-        "image": "",
-        "score": 0
-      },
-      {
-        "id": 2,
-        "name": "Brocolli",
-        "description": "Earthy tasting vege, almost grassy with a hint of bitterness. Brocolli's tend to be very green and environmental, you might catch one wearing crocs and pants made out of bamboo, sipping at green tea out of 'reusable coffee cup'",
-        "image": "./images/brocolli.jpg",
-        "score": 0
-      },
-      {
-        "id": 3,
-        "name": "Cabbage",
-        "description": "We all know a cabbage when we see one, they can be very outgoing but when you ask them a question expect a few minutes of silence. They taste bitter and a bit like pepper",
-        "image": "",
-        "score": 0
-      },
-      {
-        "id": 4,
-        "name": "Carrot",
-        "description": "Very good eyesite but at a cost, they have skin that looks like they've been in the tanning booth for days. Taste is between fruity, sweet and bitter a very unique taste. ",
-        "image": "",
-        "score": 0
-      },
-      {
-        "id": 5,
-        "name": "Eggplant",
-        "description": "Everybody secretly aspires to be an egg plant. Egg plant's are very confident and outgoing, and often say what is on their mind. But be aware egg plants are arroused easily so don't tempt them. When cooked are a creamy soft texture with a mild unusual savoury taste ",
-        "image": "",
-        "score": 0
-       
-      }
-
-    ]
-  }
-  
+  "vegetables": [
+    {
+      "id": 1,
+      "name": "Potato",
+      "description": "A light yellow starchy vegetable with a mild taste, often will find them stuck to the couch or wandering down hallways",
+      "image": "",
+      "score": 2
+    },
+    {
+      "id": 2,
+      "name": "Brocolli",
+      "description": "Earthy tasting vege, almost grassy with a hint of bitterness. Brocolli's tend to be very green and environmental, you might catch one wearing crocs and pants made out of bamboo, sipping at green tea out of 'reusable coffee cup'",
+      "image": "",
+      "score": 0
+    },
+    {
+      "id": 3,
+      "name": "Cabbage",
+      "description": "We all know a cabbage when we see one, they can be very outgoing but when you ask them a question expect a few minutes of silence. They taste bitter and a bit like pepper",
+      "image": "",
+      "score": 0
+    },
+    {
+      "id": 4,
+      "name": "Carrot",
+      "description": "Very good eyesite but at a cost, they have skin that looks like they've been in the tanning booth for days. Taste is between fruity, sweet and bitter a very unique taste. ",
+      "image": "",
+      "score": 0
+    },
+    {
+      "id": 5,
+      "name": "Eggplant",
+      "description": "Everybody secretly aspires to be an egg plant. Egg plant's are very confident and outgoing, and often say what is on their mind. But be aware egg plants are arroused easily so don't tempt them. When cooked are a creamy soft texture with a mild unusual savoury taste ",
+      "image": "",
+      "score": 0
+    }
+  ]
+}
