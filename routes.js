@@ -1,19 +1,29 @@
 const express = require('express')
-const router = express.router()
+const router = express.Router()
 const fs = require('fs')
 const file = require('./file')
 
 
-router.get('quiz/:id', (req, res) => {
+
+router.get('/:id', (req, res) => {
     id = Number(req.params.id)
 
-    path = "./questions.json"
+    path = "./data/questions.JSON"
     file.getQuestion(path, id, cb)
 
     function cb(data) {
-        res.render("Quiz", data)
+        //res.render("quiz", data)
+        res.send(data)
 
     }
+})
+
+router.post('/:id', (req, res) => {
+    // save answer 
+   
+
+    // redirect to the next question page 
+    
 })
 
 
@@ -25,3 +35,4 @@ router.get('quiz/:id', (req, res) => {
 
 // you are a potato
 
+module.exports = router

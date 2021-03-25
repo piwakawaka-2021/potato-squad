@@ -103,7 +103,7 @@
             {
                 "id": 1,
                 "answer": "Yeah!",
-                "vegetables": ["caulliflower", "brocolli", "eggplant", "carrot"],
+                "vegetables": ["caulliflower", "brocolli", "eggplant", "carrot"]
             },
             {
                 "id": 2,
