@@ -25,3 +25,4 @@ router.get('quiz/:id', (req, res) => {
 
 // you are a potato
 
+module.exports = router
