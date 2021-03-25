@@ -12,8 +12,8 @@ router.get('/:id', (req, res) => {
     file.getQuestion(path, id, cb)
 
     function cb(data) {
-        //res.render("quiz", data)
-        res.send(data)
+        res.render("quiz", data)
+        // res.send(data)
 
     }
 })
