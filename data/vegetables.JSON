@@ -5,7 +5,7 @@
       "name": "Potato",
       "description": "A light yellow starchy vegetable with a mild taste, often will find them stuck to the couch or wandering down hallways",
       "image": "",
-      "score": 3
+      "score": 0
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@
       "name": "Cabbage",
       "description": "We all know a cabbage when we see one, they can be very outgoing but when you ask them a question expect a few minutes of silence. They taste bitter and a bit like pepper",
       "image": "",
-      "score": 0
+      "score": 1
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "name": "Eggplant",
       "description": "Everybody secretly aspires to be an egg plant. Egg plant's are very confident and outgoing, and often say what is on their mind. But be aware egg plants are arroused easily so don't tempt them. When cooked are a creamy soft texture with a mild unusual savoury taste ",
       "image": "",
-      "score": 0
+      "score": 6
     }
   ]
 }

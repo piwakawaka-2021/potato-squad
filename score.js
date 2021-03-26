@@ -4,6 +4,7 @@ const file = require('./file')
 
 // updates JSON
 function addScore(path, vegetableName) {
+    console.log("add score called")
     file.readJSON(path, (err, data) => {
         if (err) {
             console.log('Error reading file:',err)
@@ -11,9 +12,9 @@ function addScore(path, vegetableName) {
         }
 
         // increase veg score count by 1
-        console.log("DATA:", data.vegetables )
         const vegetable = data.vegetables.find(element => element.name == vegetableName)
         vegetable.score += 1
+        console.log("added score: " + vegetable.name)
 
         // write back to file
         file.writeJSON(path, data, null) 
@@ -22,6 +23,7 @@ function addScore(path, vegetableName) {
 
 function answerVegetables(path, arr, cb) {
     for (i=0; i<arr.length; i++) {
+        console.log(arr[i])
         addScore(path, arr[i])
     }
     cb();
@@ -43,9 +45,13 @@ function getTotalScore(path, cb) {
     })
 }
 
-addScore("./data/vegetables.JSON", "Potato", () => {
-    console.log("added score??")
+answerVegetables("./data/vegetables.JSON", ["Cabbage", "Eggplant"], () => {
+     console.log("added score:")
 })
+
+// addScore("./data/vegetables.JSON", "Potato", () => {
+//     console.log("added score??")
+// })
 
 module.exports = {
     answerVegetables

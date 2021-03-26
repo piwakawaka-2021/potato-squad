@@ -1,6 +1,7 @@
 const fs = require('fs')
 
 function readJSON(filePath, cb) {
+    console.log("readJSON called")
     fs.readFile(filePath, (err, fileData) => {
         if (err) {
             return cb && cb(err)
