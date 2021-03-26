@@ -11,7 +11,7 @@ font-size: 50px;
 }
 
 .container {
-    height:100vh;
+
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
@@ -25,17 +25,25 @@ font-size: 50px;
     justify-content: center;
 }
 
-.ashe__title {
+/* .ashe__title {
+    display: flex;
     align-content: center;
     width: 100px;
     height: 100px;
     
+} */
+
+.ashe__image {
+    align-content: flex-end;
 }
 
 .ashe {
     display: flex;
-    width: 100vw;
-    justify-content: center;
+    height: 35vh;
+    width: 30vw;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
 }
 
 .container__box {
@@ -55,9 +63,10 @@ font-size: 50px;
 }
 
 .container__vegTitle {
-    height: 5vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
+    align-content: center;
     background: white;
     border: solid black;
 }
