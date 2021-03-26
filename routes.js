@@ -21,16 +21,16 @@ router.get('/:id', (req, res) => {
 router.post('/:id', (req, res) => {
     // save answer 
     path = "./data/vegetables.JSON"
-   console.log(req.body)
-//    const answer = req.body
-
-    // score.addScore(path, answer, cb)
-
-    // function cb (data) {
-    //     res.send("done")
-    // }
    
-    // redirect to the next question page 
+   const answer = req.body.answer
+
+    score.answerVegetables(path, answer, cb)
+
+    function cb (data) {
+        res.send("done")
+    }
+   
+   
     
 })
 
