@@ -6,20 +6,20 @@
             {
                 "id": 1,
                 "answer": "Green",
-                "vegetables": ["brocolli", "cabbage"]
+                "vegetables": ["Brocolli", "Cabbage"]
             },
             {
                 "id": 2,
                 "answer": "Orange",
-                "vegetables": ["carrot"]
+                "vegetables": ["Carrot"]
             }, {
                 "id": 3,
                 "answer": "Purple",
-                "vegetables": ["eggplant"]
+                "vegetables": ["Eggplant"]
             }, {
                 "id": 4,
                 "answer": "Other?",
-                "vegetables": ["caulliflower", "potato"]
+                "vegetables": ["Caulliflower", "Potato"]
             }
 
         ]
@@ -31,12 +31,12 @@
             {
                 "id": 1,
                 "answer": "Yes!",
-                "vegetables": ["caulliflower", "potato", "eggplant"]
+                "vegetables": ["Caulliflower", "Potato", "Eggplant"]
             },
             {
                 "id": 2,
                 "answer": "Nope...",
-                "vegetables": ["carrot", "brocolli", "cabbage"]
+                "vegetables": ["Carrot", "Brocolli", "Cabbage"]
             }
         ]
     },
@@ -47,19 +47,19 @@
             {
                 "id": 1,
                 "answer": "Don't know...?",
-                "vegetables": ["cabbage"]
+                "vegetables": ["Cabbage"]
             }, {
                 "id": 2,
                 "answer": "Watching netflix",
-                "vegetables": ["potato"]
+                "vegetables": ["Potato"]
             }, {
                 "id": 3,
                 "answer": "Getting wild!",
-                "vegetables": ["eggplant", "carrot"]
+                "vegetables": ["Eggplant", "Carrot"]
             }, {
                 "id": 4,
                 "answer": "Board game night hrmmm" ,
-                "vegetables": ["caulliflower", "brocolli"]
+                "vegetables": ["Caulliflower", "Brocolli"]
             }
         ]
     },
@@ -70,27 +70,27 @@
             {
                 "id": 1,
                 "answer": "Doco",
-                "vegetables": ["potato"]
+                "vegetables": ["Potato"]
             },{
                 "id": 2,
                 "answer": "Comedy",
-                "vegetables": ["cabbage"]
+                "vegetables": ["Cabbage"]
             }, {
                 "id": 3,
                 "answer": "Romance",
-                "vegetables": ["eggplant"]
+                "vegetables": ["Eggplant"]
             }, {
                 "id": 4,
                 "answer": "Superhero",
-                "vegetables": ["brocolli"]
+                "vegetables": ["Brocolli"]
             },{
                 "id": 5,
                 "answer": "Horror",
-                "vegetables": ["carrot"]
+                "vegetables": ["Carrot"]
             },{
                 "id": 6,
                 "answer": "Musical",
-                "vegetables": ["caulliflower"]
+                "vegetables": ["Caulliflower"]
             }
 
 
@@ -103,12 +103,12 @@
             {
                 "id": 1,
                 "answer": "Yeah!",
-                "vegetables": ["caulliflower", "brocolli", "eggplant", "carrot"]
+                "vegetables": ["Caulliflower", "Brocolli", "Eggplant", "Carrot"]
             },
             {
                 "id": 2,
                 "answer": "Noooo!",
-                "vegetables": ["potato", "cabbage"]
+                "vegetables": ["Potato", "Cabbage"]
             }
 
         ]

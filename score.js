@@ -11,8 +11,10 @@ function addScore(path, vegetableName) {
         }
 
         // increase veg score count by 1
-        console.log("DATA:", data.vegetables )
+        // console.log("DATA:", data.vegetables )
+        // console.log(data)
         const vegetable = data.vegetables.find(element => element.name == vegetableName)
+        console.log(vegetable)
         vegetable.score += 1
 
         // write back to file
@@ -21,10 +23,13 @@ function addScore(path, vegetableName) {
 }
 
 function answerVegetables(path, arr, cb) {
+    // console.log(arr)
     for (i=0; i<arr.length; i++) {
+       console.log(arr[i])
+       console.log(path)
         addScore(path, arr[i])
     }
-    cb();
+    // cb();
 }
 
 function getTotalScore(path, cb) {
