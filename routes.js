@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const fs = require('fs')
 const file = require('./file')
+const score = require('./score')
 
 
 
@@ -20,9 +21,15 @@ router.get('/:id', (req, res) => {
 
 router.post('/:id', (req, res) => {
     // save answer 
-    const veget = data.questions.map((element) => {
-        element.answers = req.body.answers
-    })
+    path = "./data/vegetables.JSON"
+    answer = req.body
+    console.log(answer)
+    score.addScore(path, answer, cb)
+
+    function cb (data) {
+        res.send("done")
+    }
+   
     // redirect to the next question page 
     
 })

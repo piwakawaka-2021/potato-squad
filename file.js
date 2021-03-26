@@ -25,12 +25,14 @@ function getQuestion(filePath, questionID, cb) {
 }
 
 function writeJSON(path, data) {
-    fs.writeFile(path, JSON.stringify(data), (err) => {
+    fs.writeFile(path, JSON.stringify(data, null, 2), (err) => {
         if (err) console.log('Error writing file:', err)
     })
 }
 
 
 module.exports = {
-    getQuestion
+    getQuestion,
+    readJSON,
+    writeJSON
 }

@@ -1,4 +1,6 @@
-<form class="form" action="/quiz/{{id}}" method="get">
+<body>
+
+<form class="form" action="/quiz/{{id}}" method="post">
   <img class="img-circle" src="{{image}}" alt="{{name}}">
   <label for="question" class="form-item">
     {{question}}
@@ -6,7 +8,7 @@
   
     <select id ="wear">
       {{#each answers}}
-    <option value="a" {{this.answer}} > </option>  
+    <option value="answer" {{this.answer}} > </option>  
   
       {{/each}}
          </select>
@@ -16,4 +18,5 @@
   
   <input type="submit" name="" value="Submit">
 </form>
+
 

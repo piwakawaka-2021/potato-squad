@@ -1,6 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const fs = require('fs')
+const file = require('./file')
 
 const routes = require('./routes')
 
@@ -18,10 +19,16 @@ server.set("view engine", "hbs")
 
 // Your routes/router(s) should go here
 server.get("/", (req, res) => {
-  fs.readFile("./data/vegetables.json", "utf-8", (err, data) => {
-    console.log(data)
-    res.render("home", data)
-  })
+    path = "./data/vegetables.JSON"
+
+    file.readJSON(path, cb)
+
+    function cb(err, data) {
+        console.log(data.vegetables)
+        res.render("home", data)
+        // res.send(data)
+
+    }
 })
 
 module.exports = server
