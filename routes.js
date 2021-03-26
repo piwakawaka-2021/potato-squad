@@ -22,9 +22,13 @@ router.post('/:id', (req, res) => {
     // save answer 
     path = "./data/vegetables.JSON"
    
-   const answer = req.body.answer
 
-    score.answerVegetables(path, answer, cb)
+   const answer = req.body.answer
+   const array = answer.split(',')
+    console.log(array)
+
+
+    score.answerVegetables(path, array, cb)
 
     function cb (data) {
         res.send("done")
@@ -32,6 +36,17 @@ router.post('/:id', (req, res) => {
    
    
     
+})
+
+router.get('/vege', (req, res) => {
+    id = Number(req.params.id)
+    path = "./data/vegetables.JSON"
+    fs.readFile(path, "utf-8", (err, data) => {
+        const parsedData = JSON.parse(data)
+
+        res.render('vege', parsedData)
+      })
+     
 })
 
 

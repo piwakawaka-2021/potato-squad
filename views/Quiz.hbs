@@ -6,9 +6,10 @@
     {{question}}
 
   
-    <select id="wear">
+    <select name="answer"id="wear">
       {{#each answers}}
-    <option value="{{this.vegetables}}"> {{this.answer}} </option>  
+    <option value={{this.vegetables}}> {{this.answer}} </option>  
+    
   
       {{/each}}
          </select>
@@ -16,7 +17,7 @@
 
 
   
-  <input type="submit"  value="Submit">
+  <input type="submit" value="Submit">
 </form>
 
 
