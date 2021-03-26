@@ -8,7 +8,6 @@ const score = require('./score')
 
 router.get('/:id', (req, res) => {
     id = Number(req.params.id)
-
     path = "./data/questions.JSON"
     file.getQuestion(path, id, cb)
 
@@ -22,13 +21,14 @@ router.get('/:id', (req, res) => {
 router.post('/:id', (req, res) => {
     // save answer 
     path = "./data/vegetables.JSON"
-    answer = req.body
-    console.log(answer)
-    score.addScore(path, answer, cb)
+   console.log(req.body)
+//    const answer = req.body
 
-    function cb (data) {
-        res.send("done")
-    }
+    // score.addScore(path, answer, cb)
+
+    // function cb (data) {
+    //     res.send("done")
+    // }
    
     // redirect to the next question page 
     

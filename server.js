@@ -24,7 +24,7 @@ server.get("/", (req, res) => {
     file.readJSON(path, cb)
 
     function cb(err, data) {
-        console.log(data.vegetables)
+        // console.log(data.vegetables)
         res.render("home", data)
         // res.send(data)
 

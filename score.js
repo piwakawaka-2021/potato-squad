@@ -18,7 +18,7 @@ function addScore(path, vegetableName, cb) {
         }
 
         // increase veg score count by 1
-        console.log("DATA:", data.vegetables )
+        // console.log("DATA:", data.vegetables )
         const vegetable = data.vegetables.find(element => element.name == vegetableName)
         vegetable.score += 1
 
