@@ -20,8 +20,9 @@ router.get('/:id', (req, res) => {
 
 router.post('/:id', (req, res) => {
     // save answer 
-   
-
+    const veget = data.questions.map((element) => {
+        element.answers = req.body.answers
+    })
     // redirect to the next question page 
     
 })

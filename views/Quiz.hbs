@@ -2,8 +2,16 @@
   <img class="img-circle" src="{{image}}" alt="{{name}}">
   <label for="question" class="form-item">
     {{question}}
-    <input type="text" name="question" value="">
-  </label>
+
+  
+    <select id ="wear">
+      {{#each answers}}
+    <option value="a" {{this.answer}} > </option>  
+  
+      {{/each}}
+         </select>
+  
+
 
   
   <input type="submit" name="" value="Submit">

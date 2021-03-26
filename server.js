@@ -18,7 +18,7 @@ server.set("view engine", "hbs")
 
 // Your routes/router(s) should go here
 server.get("/", (req, res) => {
-  fs.readFile("./data.json", "utf-8", (err, data) => {
+  fs.readFile("./data/vegetables.json", "utf-8", (err, data) => {
     console.log(data)
     res.render("home", data)
   })
