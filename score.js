@@ -1,13 +1,6 @@
 const file = require('./file')
 
 
-// where vegetable is a string
-function addPointToVegetable(vegetablesObj, vegetable) {
-    if (!vegetablesObj.hasOwnProperty(vegetable)) {
-        throw new Error("The vegetable:", vegetable, "can't be found")
-    }
-    vegetablesObj[vegetable]++
-}
 
 // updates JSON
 function addScore(path, vegetableName, cb) {
