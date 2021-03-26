@@ -1,16 +1,9 @@
 const file = require('./file')
 
 
-// where vegetable is a string
-function addPointToVegetable(vegetablesObj, vegetable) {
-    if (!vegetablesObj.hasOwnProperty(vegetable)) {
-        throw new Error("The vegetable:", vegetable, "can't be found")
-    }
-    vegetablesObj[vegetable]++
-}
 
 // updates JSON
-function addScore(path, vegetableName, cb) {
+function addScore(path, vegetableName) {
     file.readJSON(path, (err, data) => {
         if (err) {
             console.log('Error reading file:',err)
@@ -23,10 +16,37 @@ function addScore(path, vegetableName, cb) {
         vegetable.score += 1
 
         // write back to file
-        file.writeJSON(path, data, () => console.log("Successfully updated data")) 
+        file.writeJSON(path, data, null) 
     })
 }
 
-addScore("./data/vegetables.JSON", "Potato", () => {
-    console.log("added score??")
-})
+function answerVegetables(path, arr, cb) {
+    for (i=0; i<arr.length; i++) {
+        addScore(path, arr[i])
+    }
+    cb();
+}
+
+function getTotalScore(path, cb) {
+    file.readJSON(path, (err, data) => {
+        if (err) {
+            console.log('Error reading file:',err)
+            return
+        }
+        let score = 0;
+        for (i=0; i<data.vegetables.length; i++) {
+            score += data.vegetables[i].score;
+        }
+
+        cb(score)
+
+    })
+}
+
+// addScore("./data/vegetables.JSON", "Potato", () => {
+//     console.log("added score??")
+// })
+
+module.exports = {
+    answerVegetables
+}
