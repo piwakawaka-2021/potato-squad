@@ -43,9 +43,9 @@ function getTotalScore(path, cb) {
     })
 }
 
-addScore("./data/vegetables.JSON", "Potato", () => {
-    console.log("added score??")
-})
+// addScore("./data/vegetables.JSON", "Potato", () => {
+//     console.log("added score??")
+// })
 
 module.exports = {
     answerVegetables
