@@ -1,15 +1,14 @@
 
-
-{{!-- <div class="container"> --}}
-  <h1>hrllo</h1>
-
-  <h1>{{vegetables.vegetables}}</h1>
-   <h1>{{name}}</h1>
+  <h1 class="title">What type of vegetable are you?</h1>
+  <div class="container">
   {{#each vegetables}}
+    <div class="container__box">
+    <img class="container--image" src="{{image}}" alt="{{name}}">
     <h1>{{name}}</h1>
-  {{!-- <div class="puppy-list"> --}}
-   <h1>{{id}}</h1> 
-    {{!-- <img class="container--image" src="{{image}}" alt="{{name}}"></a>
-  </div> --}}
+    </div>
   {{/each}}
-{{!-- </div> --}}
+    </div>
+  <div class="ashe">
+    <h2 class="container__vegTitle">What type of vegetable are you? Im a cabbage!</h2>
+    <img class="container--image-ashe ashe__image"src="../images/ashe.png" alt="">
+  </div>

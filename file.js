@@ -20,7 +20,8 @@ function getQuestion(filePath, questionID, cb) {
     readJSON(filePath, (err, data) => {
         // get question 
         const question = data.questions.find(element => element.id == questionID)
-        cb(question)
+        const answer = data.questions.answer
+        cb(question, answer)
     })
 }
 

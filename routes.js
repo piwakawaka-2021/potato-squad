@@ -8,24 +8,45 @@ const score = require('./score')
 
 router.get('/:id', (req, res) => {
     id = Number(req.params.id)
-
     path = "./data/questions.JSON"
     file.getQuestion(path, id, cb)
 
     function cb(data) {
-        //res.render("quiz", data)
-        res.send(data)
+        res.render("quiz", data)
+        // res.send(data)
 
     }
 })
 
 router.post('/:id', (req, res) => {
     // save answer 
-   answer = req.body.answer
-   s
+    path = "./data/vegetables.JSON"
+   
 
-    // redirect to the next question page 
+   const answer = req.body.answer
+   const array = answer.split(',')
+    console.log(array)
+
+
+    score.answerVegetables(path, array, cb)
+
+    function cb (data) {
+        res.send("done")
+    }
+   
+   
     
+})
+
+router.get('/vege', (req, res) => {
+    id = Number(req.params.id)
+    path = "./data/vegetables.JSON"
+    fs.readFile(path, "utf-8", (err, data) => {
+        const parsedData = JSON.parse(data)
+
+        res.render('vege', parsedData)
+      })
+     
 })
 
 
