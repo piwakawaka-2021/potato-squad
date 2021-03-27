@@ -5,34 +5,36 @@ const file = require('./file')
 const score = require('./score')
 
 
+// question not selected 
+router.get('/', (req, res) => {
+    res.redirect("./quiz/1")
+})
 
+// new question 
 router.get('/:id', (req, res) => {
     id = Number(req.params.id)
     path = "./data/questions.JSON"
-    file.getQuestion(path, id, cb)
-
-    function cb(data) {
+    file.getQuestion(path, id, (data) => {
         res.render("quiz", data)
-        // res.send(data)
-
-    }
+    })
 })
 
+// submitted question 
 router.post('/:id', (req, res) => {
     // save answer 
     path = "./data/vegetables.JSON"
-   
+    nextID = Number(req.params.id) + 1
 
-   const answer = req.body.answer
+
+   const answer = req.body.submit
+   console.log(answer)
    const array = answer.split(',')
     console.log(array)
 
 
-    score.answerVegetables(path, array, cb)
-
-    function cb (data) {
-        res.send("done")
-    }
+    score.receiveAnswer(path, array, () => {
+        res.redirect("./" + nextID)
+   })
    
    
     

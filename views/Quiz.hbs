@@ -1,23 +1,10 @@
+<form action="/quiz/{{id}}" method="post">
+  <h1>{{question}}</h1>
+
+  {{#each answers}}
+  <button type="submit" name="submit" value="{{vegetables}}">{{answer}}</button>
+
+  {{/each}}
 
 
-<form class="form" action="/quiz/{{id}}" method="post">
-  {{!-- <img class="img-circle" src="{{image}}" alt="{{name}}"> --}}
-  <label for="wear" class="form-item">
-    {{question}}
-
-  
-    <select name="answer"id="wear">
-      {{#each answers}}
-    <option value={{this.vegetables}}> {{this.answer}} </option>  
-    
-  
-      {{/each}}
-         </select>
-  
-
-
-  
-  <input type="submit" value="Submit">
 </form>
-
-
