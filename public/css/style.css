@@ -1,0 +1,133 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    height: 100vh;
+    
+}
+
+.hero {
+    background-position: center top;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    background-color: #dc143c;
+
+}
+
+.doodleBG {
+    background-image: url("../images/vege-doodle.png");
+    background-size: 256px;
+    background-repeat: repeat;
+}
+
+.hero__title {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    max-width: 60%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.hero__frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.hero__img {
+    position: absolute;
+    height: 60%;
+}
+
+.button {
+    font-weight: 700;
+    color: #fff;
+    background-color: #0fb33b;
+    font-size: 28px;
+    text-transform: capitalize;
+    border-radius: 32px;
+    box-shadow: -4px 2px 0 2px #06521a, -2px 4px 0 2px #06521a, -4px 4px 0 2px #06521a;
+    padding: 12px 20px;
+    border: 0;
+    transition-duration: 0.2s;
+    transition-property: top, left, box-shadow;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.button:hover {
+    top: 4px;
+    left: -4px;
+    box-shadow: 0 0 0 0 #fff;
+
+}
+
+.button--quiz {
+    background-color: #0f92b3;
+    box-shadow: -4px 2px 0 2px #09596d, -2px 4px 0 2px #09596d, -4px 4px 0 2px #09596d;
+
+    margin: 20px;
+}
+
+.quiz {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    background-color: #059931;
+
+}
+
+.quiz__title {
+    margin: 0px 20px 20px 20px;
+}
+
+.quiz__buttonGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    background-color: #057b99;
+}
+
+.results__image {
+    height: 200px;
+    float: right;
+    margin-left: 20px;
+}
+
+.card {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 32px;
+    max-width: 60%;
+}
