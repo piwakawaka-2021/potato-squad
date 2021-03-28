@@ -55,6 +55,13 @@
       "colour": "#1e92af",
       "article": "a",
       "score": 0
+    },
+    {
+      "id": 6,
+      "name": "Caulliflower",
+      "description": "Hi, I'm a  ",
+      "image": "../images/caulli.jpg",
+      "score": 0
     }
   ]
 }
