@@ -12,6 +12,8 @@ server.use(express.urlencoded({ extended: false }))
 // Handlebars configuration
 server.engine("hbs", hbs({ extname: "hbs" }))
 server.set("view engine", "hbs")
+server.set('views', './views');
+
 
 // Routes
 server.use("/quiz", routes)
