@@ -1,14 +1,15 @@
-
-  <h1 class="title">What type of vegetable are you?</h1>
-  <div class="container">
-  {{#each vegetables}}
-    <div class="container__box">
-    <img class="container--image" src="{{image}}" alt="{{name}}">
-    <h1>{{name}}</h1>
-    </div>
-  {{/each}}
-    </div>
-  <div class="ashe">
-    <h2 class="container__vegTitle">What type of vegetable are you? Im a cabbage!</h2>
-    <img class="container--image-ashe ashe__image"src="../images/ashe.png" alt="">
+<div class="hero doodleBG">
+  <div class="hero__frame">
+    <img class="hero__img" src="../images/frame.png" alt="A picture frame used as a border">
+    <h1 class="hero__title">What Type of Vegetable Are You?</h1>
   </div>
+  <form action="/" method="post">
+    <button class="button" type="submit" name="submit">Take the quiz!</button>
+  </form>
+</div>
+
+
+{{!-- <div class="ashe">
+  <h2 class="container__vegTitle">Im a cabbage!</h2>
+  <img class="container--image-ashe ashe__image" src="../images/ashe.png" alt="">
+</div> --}}

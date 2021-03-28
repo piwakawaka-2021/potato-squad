@@ -1,10 +1,19 @@
-<form action="/quiz/{{id}}" method="post">
-  <h1>{{question}}</h1>
+<div class="quiz doodleBG">
+  <div class="card">
+    <form action="/quiz/{{id}}" method="post">
+      <h2 class="quiz__title">Question {{id}}:</h2>
+      <h1 class="quiz__title">{{question}}</h1>
 
-  {{#each answers}}
-  <button type="submit" name="submit" value="{{vegetables}}">{{answer}}</button>
+      <div class="quiz__buttonGrid">
 
-  {{/each}}
+      {{#each answers}}
+        <button class="button button--quiz" type="submit" name="submit" value="{{vegetables}}">{{answer}}</button>
+      {{/each}}
+
+      </div>
 
 
-</form>
+
+    </form>
+  </div>
+</div>

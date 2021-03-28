@@ -3,43 +3,57 @@
     {
       "id": 1,
       "name": "Potato",
-      "description": "A light yellow starchy vegetable with a mild taste, often will find them stuck to the couch or wandering down hallways",
-      "image": "",
-      "score": 2
+      "description": "A light yellow starchy vegetable with a mild taste. You'll often find them stuck to the couch or aimlessly wandering down hallways.",
+      "image": "../images/potato.jpg",
+      "colour": "#994205",
+      "article": "a",
+      "score": 0
     },
     {
       "id": 2,
       "name": "Brocolli",
-      "description": "Earthy tasting vege, almost grassy with a hint of bitterness. Brocolli's tend to be very green and environmental, you might catch one wearing crocs and pants made out of bamboo, sipping at green tea out of 'reusable coffee cup'",
+      "description": "An earthy tasting vege, almost grassy with a hint of bitterness. Brocolli's tend to be very green and environmental, you might catch one wearing crocs and pants made out of bamboo, sipping at green tea out of 'reusable coffee cup'.",
       "image": "../images/brocolli.jpg",
+      "colour": "#0a6637",
+      "useAltButton": true,
+      "article": "a",
       "score": 0
     },
     {
       "id": 3,
       "name": "Cabbage",
-      "description": "We all know a cabbage when we see one, they can be very outgoing but when you ask them a question expect a few minutes of silence. They taste bitter and a bit like pepper",
-      "image": "",
-      "score": 1
+      "description": "We all know a cabbage when we see one, they can be very outgoing. But when you ask them a question, expect a few minutes of silence. They taste bitter and a bit like pepper",
+      "image": "../images/cabbage.jpg",
+      "colour": "#059931",
+      "useAltButton": true,
+      "article": "a",
+      "score": 0
     },
     {
       "id": 4,
       "name": "Carrot",
-      "description": "Very good eyesite but at a cost, they have skin that looks like they've been in the tanning booth for days. Taste is between fruity, sweet and bitter a very unique taste. ",
+      "description": "Very good eyesight but at a cost, they have skin that looks like they've been in the tanning booth for days. Taste is between fruity, sweet and bitter - a very unique taste.",
       "image": "../images/carrot.jpg",
-      "score": 1
+      "colour": "#c56d01",
+      "article": "a",
+      "score": 0
     },
     {
       "id": 5,
       "name": "Eggplant",
-      "description": "Everybody secretly aspires to be an egg plant. Egg plant's are very confident and outgoing, and often say what is on their mind. But be aware egg plants are arroused easily so don't tempt them. When cooked are a creamy soft texture with a mild unusual savoury taste ",
-      "image": "",
-      "score": 7
+      "description": "Everybody secretly aspires to be an eggplant. Eggplants are very confident and outgoing, and often say what is on their mind. But be aware eggplants are aroused easily so don't tempt them. When cooked are a creamy soft texture with a mild unusual savoury taste ",
+      "image": "../images/eggplant.jpg",
+      "colour": "#811996",
+      "article": "an",
+      "score": 0
     },
     {
       "id": 6,
-      "name": "Caulliflower",
-      "description": "A bit yucky",
-      "image": "",
+      "name": "Cauliflower",
+      "description": "A little bit bland on their own, but put in a group they have the potential to be a flavour sensation! The Cauliflower has a great depth of sophistication beneath their unvaried appearance",
+      "image": "../images/cauliflower.jpg",
+      "colour": "#1e92af",
+      "article": "a",
       "score": 0
     }
   ]

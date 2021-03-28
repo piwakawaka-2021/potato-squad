@@ -1,0 +1,15 @@
+<div class="results doodleBG" style="background-color:{{colour}}">
+    <div class="card">
+        <h2>Congratulations! You are {{article}}</h2>
+        <img class="results__image" src="{{image}}" alt="A picture of {{name}}">
+        <h1>{{name}}</h1>
+        <p>{{description}}</p>
+    </div>
+    <form action="/" method="post">
+        {{#if useAltButton}}
+        <button class="button button--quiz" type="submit" name="submit">Try the Quiz Again!</button>
+        {{else}}
+        <button class="button" type="submit" name="submit">Try the Quiz Again!</button>
+        {{/if}}
+    </form>
+</div>

@@ -1,116 +1,213 @@
-{ "questions": [
-    {
-        "id": 1,
-        "question": "What is your fave colour?",
-        "answers": [
-            {
-                "id": 1,
-                "answer": "Green",
-                "vegetables": ["Brocolli", "Cabbage"]
-            },
-            {
-                "id": 2,
-                "answer": "Orange",
-                "vegetables": ["Carrot"]
-            }, {
-                "id": 3,
-                "answer": "Purple",
-                "vegetables": ["Eggplant"]
-            }, {
-                "id": 4,
-                "answer": "Other?",
-                "vegetables": ["Caulliflower", "Potato"]
-            }
-
-        ]
-    },
-    {
-        "id": 2,
-        "question": "Do you take pride in what you wear?",
-        "answers": [
-            {
-                "id": 1,
-                "answer": "Yes!",
-                "vegetables": ["Caulliflower", "Potato", "Eggplant"]
-            },
-            {
-                "id": 2,
-                "answer": "Nope...",
-                "vegetables": ["Carrot", "Brocolli", "Cabbage"]
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "question": "What are you doing this weekend?",
-        "answers": [
-            {
-                "id": 1,
-                "answer": "Don't know...?",
-                "vegetables": ["Cabbage"]
-            }, {
-                "id": 2,
-                "answer": "Watching netflix",
-                "vegetables": ["Potato"]
-            }, {
-                "id": 3,
-                "answer": "Getting wild!",
-                "vegetables": ["Eggplant", "Carrot"]
-            }, {
-                "id": 4,
-                "answer": "Board game night hrmmm" ,
-                "vegetables": ["Caulliflower", "Brocolli"]
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "question": "If your life was a movie, what would it be?",
-        "answers": [
-            {
-                "id": 1,
-                "answer": "Doco",
-                "vegetables": ["Potato"]
-            },{
-                "id": 2,
-                "answer": "Comedy",
-                "vegetables": ["Cabbage"]
-            }, {
-                "id": 3,
-                "answer": "Romance",
-                "vegetables": ["Eggplant"]
-            }, {
-                "id": 4,
-                "answer": "Superhero",
-                "vegetables": ["Brocolli"]
-            },{
-                "id": 5,
-                "answer": "Horror",
-                "vegetables": ["Carrot"]
-            },{
-                "id": 6,
-                "answer": "Musical",
-                "vegetables": ["Caulliflower"]
-            }
-
-
-        ]
-    },
-    {
-        "id": 5,
-        "question": "Do you enjoy playing sports?",
-        "answers": [
-            {
-                "id": 1,
-                "answer": "Yeah!",
-                "vegetables": ["Caulliflower", "Brocolli", "Eggplant", "Carrot"]
-            },
-            {
-                "id": 2,
-                "answer": "Noooo!",
-                "vegetables": ["Potato", "Cabbage"]
-            }
-
-        ]
-    }
-]}
+{
+    "questions":[
+       {
+          "id":1,
+          "question":"What is your favourite colour?",
+          "answers":[
+             {
+                "id":1,
+                "answer":"Green",
+                "vegetables":[
+                   "Brocolli",
+                   "Cabbage"
+                ]
+             },
+             {
+                "id":2,
+                "answer":"Orange",
+                "vegetables":[
+                   "Carrot"
+                ]
+             },
+             {
+                "id":3,
+                "answer":"Purple",
+                "vegetables":[
+                   "Eggplant"
+                ]
+             },
+             {
+                "id":4,
+                "answer":"Other?",
+                "vegetables":[
+                   "Cauliflower",
+                   "Potato"
+                ]
+             }
+          ]
+       },
+       {
+          "id":2,
+          "question":"Do you take pride in what you wear?",
+          "answers":[
+             {
+                "id":1,
+                "answer":"Yes!",
+                "vegetables":[
+                   "Cauliflower",
+                   "Eggplant",
+                   "Carrot"
+                ]
+             },
+             {
+                "id":2,
+                "answer":"Nope...",
+                "vegetables":[
+                   "Brocolli",
+                   "Cabbage",
+                   "Potato"
+                ]
+             }
+          ]
+       },
+       {
+          "id":3,
+          "question":"What are you doing this weekend?",
+          "answers":[
+             {
+                "id":1,
+                "answer":"Going to bed early",
+                "vegetables":[
+                   "Cabbage"
+                ]
+             },
+             {
+                "id":2,
+                "answer":"Watching netflix",
+                "vegetables":[
+                   "Potato"
+                ]
+             },
+             {
+                "id":3,
+                "answer":"Getting wild!",
+                "vegetables":[
+                   "Eggplant",
+                   "Carrot"
+                ]
+             },
+             {
+                "id":4,
+                "answer":"Board game night",
+                "vegetables":[
+                   "Cauliflower",
+                   "Brocolli"
+                ]
+             }
+          ]
+       },
+       {
+          "id":4,
+          "question":"If your life was a movie, what would it be?",
+          "answers":[
+             {
+                "id":1,
+                "answer":"Doco",
+                "vegetables":[
+                   "Potato",
+                   "Brocolli"
+                ]
+             },
+             {
+                "id":2,
+                "answer":"Comedy",
+                "vegetables":[
+                   "Cabbage",
+                   "Eggplant"
+                ]
+             },
+             {
+                "id":3,
+                "answer":"Romance",
+                "vegetables":[
+                   "Eggplant"
+                ]
+             },
+             {
+                "id":4,
+                "answer":"Superhero",
+                "vegetables":[
+                   "Brocolli",
+                   "Carrot"
+                ]
+             },
+             {
+                "id":5,
+                "answer":"Horror",
+                "vegetables":[
+                   "Carrot"
+                ]
+             },
+             {
+                "id":6,
+                "answer":"Musical",
+                "vegetables":[
+                   "Cauliflower"
+                ]
+             }
+          ]
+       },
+       {
+          "id":5,
+          "question":"Do you enjoy playing sports?",
+          "answers":[
+             {
+                "id":1,
+                "answer":"Yeah!",
+                "vegetables":[
+                   "Cauliflower",
+                   "Brocolli",
+                   "Eggplant",
+                   "Carrot"
+                ]
+             },
+             {
+                "id":2,
+                "answer":"Noooo!",
+                "vegetables":[
+                   "Potato",
+                   "Cabbage"
+                ]
+             }
+          ]
+       },
+       {
+          "id":6,
+          "question":"On your dream holiday, where would you be?",
+          "answers":[
+             {
+                "id":1,
+                "answer":"At the beach",
+                "vegetables":[
+                   "Brocolli",
+                   "Eggplant",
+                   "Carrot"
+                ]
+             },
+             {
+                "id":2,
+                "answer":"Exploring",
+                "vegetables":[
+                   "Cauliflower",
+                   "Brocolli"
+                ]
+             },
+             {
+                "id":3,
+                "answer":"Shopping",
+                "vegetables":[
+                   "Eggplant",
+                   "Cabbage"
+                ]
+             },
+             {
+                "id":4,
+                "answer":"In the hotel room",
+                "vegetables":[
+                   "Potato"
+                ]
+             }
+          ]
+       }
+    ]
+ }

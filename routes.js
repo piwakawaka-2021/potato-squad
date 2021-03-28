@@ -1,22 +1,40 @@
 const express = require('express')
 const router = express.Router()
-const fs = require('fs')
-const file = require('./file')
-const score = require('./score')
+const quiz = require('./quiz')
 
 
 // question not selected 
 router.get('/', (req, res) => {
-    res.redirect("./quiz/1")
+    res.redirect("./1")
+})
+
+// end results
+router.get('/results', (req, res) => {
+    // get most scored vege! 
+    quiz.getResultVegetable("./data/vegetables.JSON", (data) => {
+        res.render("results", data)
+    })
+
 })
 
 // new question 
 router.get('/:id', (req, res) => {
     id = Number(req.params.id)
     path = "./data/questions.JSON"
-    file.getQuestion(path, id, (data) => {
-        res.render("quiz", data)
-    })
+
+    // reset quiz
+    if (id == 1) {
+        quiz.resetScore("./data/vegetables.JSON", () => {
+            quiz.getQuestion(path, id, (data) => {
+                res.render("quiz", data)
+            })
+        })
+    }
+    else {
+        quiz.getQuestion(path, id, (data) => {
+            res.render("quiz", data)
+        })
+    }
 })
 
 // submitted question 
@@ -25,39 +43,19 @@ router.post('/:id', (req, res) => {
     path = "./data/vegetables.JSON"
     nextID = Number(req.params.id) + 1
 
+    const answer = req.body.submit
+    const array = answer.split(',')
 
-   const answer = req.body.submit
-   console.log(answer)
-   const array = answer.split(',')
-    console.log(array)
+    quiz.receiveAnswer(path, array, () => {
 
+        quiz.getNumberOfQuestions("./data/questions.JSON", (numberOfQuestions) => {
+            // if there is a next question
+            if (nextID <= numberOfQuestions) res.redirect("./" + nextID)
 
-    score.receiveAnswer(path, array, () => {
-        res.redirect("./" + nextID)
-   })
-   
-   
-    
+            // else go to final results 
+            else res.redirect("./results")
+        })
+    })
 })
-
-router.get('/vege', (req, res) => {
-    id = Number(req.params.id)
-    path = "./data/vegetables.JSON"
-    fs.readFile(path, "utf-8", (err, data) => {
-        const parsedData = JSON.parse(data)
-
-        res.render('vege', parsedData)
-      })
-     
-})
-
-
-
-// Quiz Question do you sleep alot ? 
-
-// potato 1 point
-
-
-// you are a potato
 
 module.exports = router
