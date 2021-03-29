@@ -11,9 +11,8 @@ server.use(express.static(path.join(__dirname, 'public')));
 server.use(express.urlencoded({ extended: false }))
 
 // Handlebars configuration
-server.engine("hbs", hbs({ extname: "hbs" }))
-server.set("view engine", "hbs")
-server.set('views', path.join(__dirname, 'views'));
+server.engine('hbs', hbs({defaultLayout: 'main', extname: '.hbs'}));
+server.set('view engine', 'hbs');
 
 
 // Routes
