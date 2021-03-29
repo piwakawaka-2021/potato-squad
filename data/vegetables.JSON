@@ -7,7 +7,7 @@
       "image": "../images/potato.jpg",
       "colour": "#994205",
       "article": "a",
-      "score": 0
+      "score": 3
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "colour": "#0a6637",
       "useAltButton": true,
       "article": "a",
-      "score": 4
+      "score": 2
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "colour": "#059931",
       "useAltButton": true,
       "article": "a",
-      "score": 1
+      "score": 3
     },
     {
       "id": 4,
@@ -54,14 +54,7 @@
       "image": "../images/cauliflower.jpg",
       "colour": "#1e92af",
       "article": "a",
-      "score": 4
-    },
-    {
-      "id": 6,
-      "name": "Caulliflower",
-      "description": "Hi, I'm a  ",
-      "image": "../images/caulli.jpg",
-      "score": 0
+      "score": 1
     }
   ]
 }
