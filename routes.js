@@ -26,13 +26,13 @@ router.get('/:id', (req, res) => {
     if (id == 1) {
         quiz.resetScore("./data/vegetables.JSON", () => {
             quiz.getQuestion(path, id, (data) => {
-                res.render("quiz", data)
+                res.render("quizz", data)
             })
         })
     }
     else {
         quiz.getQuestion(path, id, (data) => {
-            res.render("quiz", data)
+            res.render("quizz", data)
         })
     }
 })

@@ -24,7 +24,7 @@ server.get("/", (req, res) => {
 })
 
 server.post("/", (req, res) => {
-    res.redirect("./quiz/1")
+    res.redirect("/quiz/1")
 })
 
 module.exports = server

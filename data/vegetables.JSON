@@ -17,7 +17,7 @@
       "colour": "#0a6637",
       "useAltButton": true,
       "article": "a",
-      "score": 1
+      "score": 4
     },
     {
       "id": 3,
@@ -36,7 +36,7 @@
       "image": "../images/carrot.jpg",
       "colour": "#c56d01",
       "article": "a",
-      "score": 0
+      "score": 2
     },
     {
       "id": 5,
@@ -45,7 +45,7 @@
       "image": "../images/eggplant.jpg",
       "colour": "#811996",
       "article": "an",
-      "score": 0
+      "score": 3
     },
     {
       "id": 6,
@@ -54,7 +54,7 @@
       "image": "../images/cauliflower.jpg",
       "colour": "#1e92af",
       "article": "a",
-      "score": 0
+      "score": 4
     },
     {
       "id": 6,
