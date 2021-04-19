@@ -31,5 +31,16 @@ server.get("/", (req, res) => {
     }
 })
 
+server.get('/vege', (req, res) => {
+  id = Number(req.params.id)
+  path = "./data/vegetables.JSON"
+  fs.readFile(path, "utf-8", (err, data) => {
+      const parsedData = JSON.parse(data)
+
+      res.render('vege', parsedData)
+    })
+   
+})
+
 module.exports = server
 
